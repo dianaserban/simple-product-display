@@ -21,7 +21,7 @@
           <a class="navbar-brand ms-2 ms-lg-0" href="#">sneakers</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#" id="collections-link">Collections</a>
             </li>
@@ -66,6 +66,80 @@
     </div>
   </div>
   <!-- End Of NAV part here -->
+
+  <!--Product Display here-->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Left Column: Product Images -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image-product-1.jpg" class="d-block w-100" alt="Big Image">
+            </div>
+           
+            <div class="carousel-item">
+              <img src="images/image-product-2.jpg" class="d-block w-100" alt="Thumbnail 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-product-3.jpg" class="d-block w-100" alt="Thumbnail 3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-product-4.jpg" class="d-block w-100" alt="Thumbnail 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <a href="#" class="thumbnail-link active">
+              <img src="images/image-product-1-thumbnail.jpg" class="img-thumbnail img-fluid" alt="Thumbnail 1">
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="thumbnail-link">
+              <img src="images/image-product-2-thumbnail.jpg" class="img-thumbnail img-fluid" alt="Thumbnail 2">
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="thumbnail-link">
+              <img src="images/image-product-3-thumbnail.jpg" class="img-thumbnail img-fluid" alt="Thumbnail 3">
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#" class="thumbnail-link">
+              <img src="images/image-product-4-thumbnail.jpg" class="img-thumbnail img-fluid" alt="Thumbnail 4">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Product Details -->
+      <div class="col-lg-6">
+        <h3 class="mb-3">SNEAKER COMPANY</h3>
+        <h2 class="mb-3">Fall Limited Edition Sneakers</h2>
+        <p class="mb-3">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <p class="lead mb-1"><strong>$125.00</strong></p>
+        <div class="d-flex align-items-center mb-3">
+          <div class="badge bg-dark text-white me-2 py-1 px-2">50%</div>
+          <p class="text-decoration-line-through mb-0">$250.00</p>
+        </div>
+        <div class="input-group mb-3" style="max-width: 200px;">
+          <button class="btn btn-outline-secondary" type="button" id="btnMinus">-</button>
+          <input type="text" class="form-control text-center" value="1">
+          <button class="btn btn-outline-secondary" type="button" id="btnPlus">+</button>
+        </div>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
