@@ -1,0 +1,14 @@
+
+Creeaza o pagina de produs cat mai apropiata ca design de cea prezentata in folderul "design".
+
+* Poti folosi orice instrument/tehonolgie iti este de ajutor pentru a finaliza proiectul.
+** Imaginile necesare pentru acest template se afla in folderul "images".
+
+Cerinte:
+
+- layout responsive;
+- activare elemente la mouseover pentru zonele interactive din pagina;
+- afisare galerie de imagini tip lightbox atunci cand este actionata imaginea principala de produs;
+- schimbarea imaginii de produs atunci cand este actionata una dintre imaginile de tip thumbnail;
+- adaugare produs in cosul de cumparaturi;
+- vizualizare fereastra cos de cumparaturi si posibilitatea stergerii produselor din cadrul acestuia.

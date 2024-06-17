@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide-In Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+  <!-- The NAV PART HERE -->
+  <div class="dark-overlay"></div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <a class="navbar-brand ms-2 ms-lg-0" href="#">sneakers</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="collections-link">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="men-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="women-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="about-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right-aligned items -->
+        <div class="d-flex align-items-center order-lg-last">
+          <a class="nav-link me-2" href="#"><ion-icon name="cart-outline" class="shopping-cart-icon"></ion-icon></a>
+          <div class="user-card ms-3" data-bs-toggle="modal" data-bs-target="#userModal">
+            <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="User Photo">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="border-nav"></div>
+  </div>
+  
+  <!-- User Info Modal -->
+  <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="userModalLabel">User Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>User details go here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Of NAV part here -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
